@@ -1,0 +1,79 @@
+:root {
+  --primary: #1ecbe1;
+  --secondary: #1e6ae1;
+  --font-one-size: 25px;
+  --font-two-size: 15px;
+  --font-one: arial;
+  --font-two: sans-serif,
+}
+
+ * {
+  margin: 0 auto;
+  padding: 0px;
+  font-family: var(--font-one);
+  font-size: var(--font-one-size);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  height: 1000px;
+  background-color: var(--primary);
+  padding-top: 1px;
+  background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+  text-align: center;
+  font-size: 25px;
+}
+
+#calculator {
+  margin-top: 100px
+}
+
+.button-calculator {
+  border-radius: 10px;
+  display: inline-block;
+  margin: 2px 2px;
+  background-color: white;
+  width: 75px;
+  height: 75px;
+  line-height: 10px;
+  user-select: none;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ transition-duration: 0.4s;
+}
+
+.button-calculator:hover {
+  transition-duration: 0.4s;
+  background-color: lightgrey;
+}
+
+.button-calculator:active {
+  transition-duration: 0.1s;
+  background-color: white;
+}
+
+.button-calculator p {
+  margin-top: 31px;
+  text-align: center;
+}
+
+#app-name {
+  margin-top: 25px;
+  font-size: 50px;
+  color: white;
+}
+
+#made-in-js {
+  font-size: 16px;
+}
+
+#calculator-value {
+  margin-top: 200px;
+  font-size: 50px;
+  color: white;
+}
